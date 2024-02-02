@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+    <TextView
+        android:id="@+id/tempText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textFontWeight="@integer/material_motion_duration_long_1"
+        android:layout_marginTop="350sp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/NameCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="300sp"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+
+        android:background="@drawable/custom_edit_text"
+        android:id="@+id/editTextText"
+        android:layout_width="300sp"
+        android:layout_marginTop="20sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Введите город"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:textColor="@color/Gray"
+        android:textColorHint="@color/Gray"
+        android:paddingLeft="10sp"
+        android:layout_marginLeft="10sp"
+        />
+
+
+    <ImageButton
+        android:id="@+id/LoopButton"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:layout_marginLeft="330sp"
+        android:layout_marginTop="25sp"
+        android:background="@drawable/loupe"
+        android:onClick="LoopaClick"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tempText"
+    android:id="@+id/LinearLayoutTools"
+    android:orientation="horizontal"
+    tools:ignore="NotSibling">
+
+</LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_below="@+id/LinearLayoutTools"
+        android:layout_marginTop="160sp">
+    </LinearLayout>
+
+
+
+</RelativeLayout>
