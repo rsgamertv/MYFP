@@ -6,8 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@drawable/background">
+    
     <TextView
-        android:id="@+id/tempText"
+        android:id="@+id/GuiText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
@@ -40,7 +41,8 @@
         android:textColor="@color/Gray"
         android:textColorHint="@color/Gray"
         android:paddingLeft="10sp"
-        android:layout_marginLeft="10sp"
+        android:layout_marginLeft="20sp"
+        android:drawableLeft="@drawable/baseline_location_city_24"
         />
 
 
